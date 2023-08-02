@@ -1,6 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const Login = () => {
+	const [email, setEmail] = useState("");
+	const [pass, setPass] = useState("");
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(email);
+	};
 	return (
 		<div className="flex items-center justify-center min-h-screen bg-gray-100">
 			<div className="max-w-md w-full p-6 bg-white rounded shadow-lg">
@@ -20,6 +28,8 @@ const Login = () => {
 							id="username"
 							type="text"
 							placeholder="Username"
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
 						/>
 					</div>
 					<div className="mb-4">
@@ -34,6 +44,8 @@ const Login = () => {
 							id="password"
 							type="password"
 							placeholder="Password"
+							value={pass}
+							onChange={(e) => setPass(e.target.value)}
 						/>
 					</div>
 					<div className="flex items-center justify-between">
@@ -43,12 +55,9 @@ const Login = () => {
 						>
 							Sign In
 						</button>
-						<a
-							className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-							href="#"
-						>
-							Forgot Password?
-						</a>
+						<button className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+							Forgot Password
+						</button>
 					</div>
 				</form>
 			</div>
