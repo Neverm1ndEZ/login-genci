@@ -18,7 +18,7 @@ To run this project locally, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone
+git clone https://github.com/Neverm1ndEZ/login-genci.git
 ```
 
 2. Install the dependencies:
