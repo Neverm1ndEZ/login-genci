@@ -1,3 +1,4 @@
+![image](https://github.com/Neverm1ndEZ/login-genci/assets/92265140/f000f14a-a16f-4a05-9cb5-06e84597ab8e)
 ![image](https://github.com/Neverm1ndEZ/login-genci/assets/92265140/8d210ebc-5c54-4e7e-93c6-4f7b531d4e98)
 # Next.js Login Page with Tailwind CSS
 
